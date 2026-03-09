@@ -1,18 +1,32 @@
-## CoachBot
+# 🤖 CoachBot – Telegram Quiz Bot
 
-CoachBot is a simple Telegram quiz bot that asks multiple-choice questions and keeps track of user scores with a leaderboard.
+CoachBot is a lightweight Telegram bot that delivers **multiple-choice quiz questions**, tracks **user scores**, and maintains a **leaderboard** to encourage learning and competition.
 
-### Features
+The bot loads quiz questions from a JSON file and allows users to interact through simple Telegram commands.
 
-- Multiple-choice quiz questions loaded from `questions.json`
-- Score tracking across quiz sessions
-- Simple leaderboard that shows top users by score
+---
 
-### Requirements
+## ✨ Features
 
-- Python 3.9+
-- `python-telegram-bot` (v20+)
-- `requests`
+* 🧠 **Multiple-Choice Quizzes**
+  Loads questions from `questions.json` and presents them interactively.
+
+* 📊 **Score Tracking**
+  Tracks user scores across quiz sessions.
+
+* 🏆 **Leaderboard**
+  Displays top users based on their quiz performance.
+
+* ⚡ **Simple & Lightweight**
+  Easy to deploy and run with minimal configuration.
+
+---
+
+## 🛠 Requirements
+
+* Python **3.9+**
+* `python-telegram-bot` (v20+)
+* `requests`
 
 Install dependencies:
 
@@ -20,24 +34,50 @@ Install dependencies:
 pip install python-telegram-bot==21.0.1 requests
 ```
 
-### Configuration
+---
 
-In `bot.py`, set:
+## ⚙️ Configuration
 
-- `BOT_TOKEN` to your Telegram bot token
-- `WEBHOOK_URL` to the URL where you want quiz results to be sent (or leave as a dummy value if you do not need webhooks)
+Edit **`bot.py`** and set the following values:
 
-### Running the bot
+* `BOT_TOKEN` – Your Telegram bot token from BotFather
+* `WEBHOOK_URL` – URL where quiz results can be sent (optional)
 
-Run the bot with:
+---
+
+## ▶️ Running the Bot
+
+Start the bot:
 
 ```bash
 python bot.py
 ```
 
-Make sure your bot is started in Telegram and that the token is valid. Then you can use:
+Make sure:
 
-- `/start` to see the welcome message
-- `/quiz` to start a quiz
-- `/leaderboard` to see top scores
+* Your **Telegram bot token is valid**
+* The bot is started from Telegram
 
+---
+
+## 📱 Available Commands
+
+| Command        | Description                 |
+| -------------- | --------------------------- |
+| `/start`       | Shows welcome message       |
+| `/quiz`        | Starts a quiz session       |
+| `/leaderboard` | Displays top users by score |
+
+---
+
+## 📂 Project Files
+
+* `bot.py` – Main Telegram bot logic
+* `questions.json` – Quiz questions database
+
+---
+
+## 📜 License
+
+This project is currently unlicensed.
+If you plan to reuse or distribute it, consider adding a license such as MIT or Apache 2.0.
