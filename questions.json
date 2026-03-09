@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Who is the founder of ICF?",
+        "options": ["H.S. Mehta", "M.A. Naik", "R.K. Menon", "None of the above"],
+        "answer": "H.S. Mehta"
+    },
+    {
+        "question": "ICF is located in which city?",
+        "options": ["Chennai", "Delhi", "Mumbai", "Kolkata"],
+        "answer": "Chennai"
+    },
+    {
+        "question": "Which year was ICF established?",
+        "options": ["1955", "1960", "1975", "1980"],
+        "answer": "1955"
+    }
+]
